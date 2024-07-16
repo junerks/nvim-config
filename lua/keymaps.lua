@@ -33,4 +33,11 @@ vim.keymap.set("n", "<leader>Y", '"+Y')
 vim.keymap.set("n", "<leader>d", '"_d')
 vim.keymap.set("v", "<leader>d", '"_d')
 
+-- format file
 vim.keymap.set("n", "<leader>fo", vim.lsp.buf.format)
+
+-- show gitsigns hunk
+vim.keymap.set("n", "<leader>gp", ":Gitsigns preview_hunk<CR>")
+
+-- show line blame
+vim.keymap.set("n", "<leader>gt", ":Gitsigns toggle_current_line_blame<CR>")
